@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{%  block content %}
+
+<div class="container mt-5 mb-5 shadow">
+    <div class="row">
+        <div class="col-lg-6 shadow p-4">
+            <h3> Conexion</h3>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">  Adresse e-mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer votre email">
+                  <small id="emailHelp" class="form-text text-muted">Votre e-mail sera confidentiel.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Mot de Passe</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de Passe">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Selectionez</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Valider</button>
+              </form>
+        </div>
+        <div class="col-lg-6">
+            <img src="https://www.keplearning.com/wp-content/uploads/2021/03/web-dev.jpg" alt="" class="img-fluid img-responsive">
+
+        </div>
+    </div>
+</div>
+{% endblock %}
